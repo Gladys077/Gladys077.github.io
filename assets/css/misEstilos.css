@@ -1,0 +1,191 @@
+html {
+    scroll-behavior: smooth;
+   }
+.bg-oscuro {
+       background-color: rgb(40, 40, 40);
+   }
+.imagenFondo{
+    width:100vw;
+    height:100vh;
+    filter: brightness(50%); /*Más oscura*/
+    object-fit: cover;
+    position: relative;
+    display: inline-block;
+    z-index: -10;
+}
+.txtSuperpuesto {
+    position: absolute;
+    color: white;
+    bottom: 60px;
+    right: 95px;
+    width: 40%;
+    text-align: right;
+}
+section2 {
+    align-items: center;
+}
+.conoce {
+    font-size: smaller;
+    text-align: center;
+    margin-bottom: 0;
+}
+h3 {
+    text-align: center;
+}
+.centrado {
+    justify-content: center;
+}
+
+
+.bordeBlanco {
+    border-right: 1px solid white; 
+}
+.img-fluid{
+    object-fit: cover;
+    height: 100%;
+}
+.txtDer {
+    padding: 15px;
+    color: white;
+}
+.section4-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.textForm {
+    display: inline-block;
+    text-align: center;
+}
+.form {
+    width: 60%;
+}
+.form-control {
+    padding: 10px;
+}
+.piedetextarea {
+    font-size: small; 
+    text-align: left;
+}
+.vtaTicket {
+    width: 100vw;
+    text-align: center;
+}
+.ticket {
+    width: 248px; 
+    height: 200px; 
+    margin: 3px;
+    border: 2px solid; 
+    position: relative;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;  
+}
+.alert {
+    margin-left: 12px;
+    margin-right: 20px;
+    width: 97%;
+    margin-top: 35px;
+    font-size: 1.2rem;
+}
+.claro {
+    background-color: rgb(128, 209, 5);
+}
+.bg-footer {
+    background-color: rgb(3, 65, 64);
+}
+
+footer nav div ul li a.nav-link{
+    color: #fff;
+    justify-content: center;
+}
+
+a.nav-link:hover{
+    color:rgb(61, 245, 150) !important;
+}
+.menuFooter {
+    justify-content: center;
+    align-items: center;
+}
+   
+@media (min-width: 768px) {
+    .row-cols-md-2>* {
+        flex: 0 0 auto;
+        width: 30%;
+    }
+    .row-cols-lg-3>* {
+        flex: 0 0 auto;
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 978px) {
+    .row-cols-md-2>* {
+        flex: 0 0 auto;
+        width: 45%;
+    }
+    .txtDer {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .txtSuperpuesto {   
+        position: absolute;
+        color: white;
+        bottom: 30px;
+        right: 65px;
+        width: 60%;
+        text-align: right;
+        z-index: -5;
+    }
+    .form {
+        text-align: center;
+        width: 80%;
+    }
+    .form-control {
+        padding: 10px;
+    }
+    .piedetextarea {
+        font-size: small; 
+        text-align: left;
+    }
+}
+@media screen and (max-width: 600px) {
+    .txtSuperpuesto {   
+        position: absolute;
+        color: white;
+        padding-left: 15px;
+        width: 80%;
+        text-align: left;
+        z-index: -5;
+    }
+    .row-cols-1>* {
+        flex: 0 0 auto;
+        width: 90%;
+    }
+    .txtDer {
+        padding: 30px;
+    }
+    .form {
+        width: 90vw;
+    }
+    footer nav div ul {
+        display: block;
+    }
+    footer nav div ul{
+        justify-content: center;
+    }
+    footer nav div ul li{
+        text-align: center;
+    }
+    section1 div button {
+        margin-bottom: 10px;
+    }
+}    
+
+    
+
+
+
+   
+   
+   

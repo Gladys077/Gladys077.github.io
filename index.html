@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TP Integrador</title>
+  <!--Bootstrap-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Mis estilos-->
+  <link rel="stylesheet" href="./assets/css/misEstilos.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-oscuro">
+      <div class="container-fluid">
+        <img src="./assets/images/codoacodo.png" alt="CodoaCodo" width="100" height="54" class="d-inline-block">
+        <a class="navbar-brand" href="#">Conf Bs As</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#sec1">La conferencia</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sec2">Los oradores</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sec3">El lugar y la fecha</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sec4">Conviértete en orador</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sec5" style="color:rgb(55, 242, 55)">Comprar tickets</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!--Imagen de fondo-->
+  <section1 id="sec1">
+    <img class="imagenFondo" src="./assets/images/hawaii.jpg" >
+    <div class="txtSuperpuesto">
+      <h1>Conf Bs As</h1>
+      <p>Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de internet. Ven a conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!
+      </p>
+      <button type="button" class="btn btn-outline-light btn-lg" onclick="location.href='#sec4'">Quiero ser orador</button>
+      <button type="button" class="btn btn-success btn-lg" onclick="location.href='#sec5'">Quiero Tickets</button>
+    </div>
+  </section1>
+  <!--2da.Sección-->
+  <section2 id="sec2">
+    <p class="conoce mt-3">CONOCE A LOS</p>
+    <h3>ORADORES</h3>
+    <!--tarjetas en línea-->
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 centrado">
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/images/steve.jpg" class="card-img-top" alt="SteveJobs">
+          <div class="card-body">
+            <button type="button" class="btn btn-warning btn-sm"><b>Javascript</b></button>
+            <button type="button" class="btn btn-success btn-sm"><b>Success</b></button>
+            <h5 class="card-title">Steve Jobs</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus iste reprehenderit beatae itaque nobis placeat pariatur accusantium iusto, fugit consequatur! Sit corrupti adipisci hic provident quod dolor modi ipsum aspernatur.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/images/bill.jpg" class="card-img-top" alt="BillGates">
+          <div class="card-body">
+            <button type="button" class="btn btn-warning btn-sm"><b>Javascript</b></button>
+            <button type="button" class="btn btn-success btn-sm"><b>Success</b></button>
+            <h5 class="card-title">Bill Gates</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus iste reprehenderit beatae itaque nobis placeat pariatur accusantium iusto, fugit consequatur! Sit corrupti adipisci hic provident quod dolor modi ipsum aspernatur.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="./assets/images/ada.jpeg" class="card-img-top" alt="AdaLovelace">
+          <div class="card-body">
+            <button type="button" class="btn btn-secondary btn-sm"><b>Negocios</b></button>
+            <button type="button" class="btn btn-danger btn-sm"><b>Startups</b></button>
+            <h5 class="card-title">Ada Lovelace</h5>
+            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus iste reprehenderit beatae itaque nobis placeat pariatur accusantium iusto, fugit consequatur! Sit corrupti adipisci hic provident quod dolor modi ipsum aspernatur.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section2>
+  <!--3ra Sección-->
+  <section3 class="card my-4 m-0 bg-oscuro" id="sec3">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+        <img src="./assets/images/honolulu.jpg" class="bordeBlanco img-fluid rounded-start">
+      </div>
+      <div class="txtDer  col-xs-12 col-sm-12- col-md-6 col-lg-6">
+        <h4>Bs As - Octubre</h4>
+        <p>Buenos Aires es la provincia y localidad más grande del estado de Argentina, en los Estados Unidos, Honolulu es la más sureña de entre las principales ciudades esadounidenses. Aunque el nombre de Honolulu se refiere al área urbana en la costa sureste e la isla de Oaku, la ciudad y el condado de Honolulu han formado una ciudad condado consolidada que cubre toda la ciudad (aproximadamente 600 km2 de superficie).</p>
+        <button type="button" class="btn btn-outline-light">Conocé más</button>
+      </div>
+    </div>
+  </section3>
+  <!--4ta Sección: Conviertete en Orador-->
+  <section4 class="section4-container" id="sec4">
+    <div class="textForm col-xs-12 col-sm-12- col-md-8 col-lg-8">
+      <p class="conoce mt-3">CONVIÉRTETE EN UN</p>
+      <h3>ORADOR</h3>
+      <p>Anótate como orador para dar una charla ignite. Cuéntanos de qué quieres hablar!</p>
+    </div>
+    <form class="form">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+        </div>
+      </div>
+      <div class="form__section">
+        <textarea class="form-control mt-3" id="exampleFormControlTextarea1" placeholder="Sobre qué quieres hablar?" rows="3" style="font-size:larger"></textarea>
+      </div>
+        <p class="piedetextarea">Recuerda incluir un título para tu charla</p>
+      </div>
+      <div class="d-grid gap-2">
+        <button class="btn btn-success mb-3" type="button">Enviar</button>
+      </div>
+      <br>
+    </form>
+    </div>
+  </section4>
+  <!--5ta Sección: Venta Tickets -->
+  <section5 class="section5-container" id="sec5">
+    <div class="row justify-content-center">
+      <div class="col-3 border-primary ticket">
+        <h4>Estudiante</h4>
+        <h5>Tienen un descuento</h5>
+        <h5><b>80%</b></h5>
+        <p>* Presentar documentación</p>
+      </div>
+      <div class="col-3 border-success ticket">
+        <h4>Trainee</h4>
+        <h5>Tienen un descuento</h5>
+        <h5><b>50%</b></h5>
+        <p>* Presentar documentación</p>
+      </div>
+      <div class="col-3 border-warning ticket">
+        <h4>Junior</h4>
+        <h5>Tienen un descuento</h5>
+        <h5><b>15%</b></h5>
+        <p>* Presentar documentación</p>
+      </div>
+      <br>
+    </div>
+    <div class="vtaTicket col-xs-12 col-sm-12- col-md-8 col-lg-8">
+      <h5>VENTA</h5>
+      <h1>VALOR DE TICKET $ 200</h1> 
+    </div>
+    <form class="form container" id="formTicket" action="/venta-de-tickets">
+      <div class="row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Nombre" id="nombre-ticket">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Apellido" id="apellido-ticket">
+        </div>
+      </div>
+      <div class="row">
+        <div>
+          <input class="form-control mt-3" type="text" placeholder="Correo" id="correo-ticket">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <label for="cantidadTicket" class="form-label mt-3">Cantidad</label>
+          <input type="text" class="form-control" placeholder="Cantidad" id="cantidad-ticket">
+        </div>
+        <div class="col">
+          <label for="categoriaTicket" class="form-label mt-3">Categoría</label>
+          <select class="form-control form-select" placeholder="Estudiante" id="categoria-ticket">
+            <option selected>Elija la categoría</option>
+            <option value="Estudiante">Estudiante</option>
+            <option value="Trainee">Trainee</option>
+            <option value="Junior">Junior</option>
+          </select>
+        </div>
+        <div id="total" class="alert alert-primary" role="alert">
+          Total a Pagar: $ 
+        </div>        
+        <button type="reset" onclick="borrar()" class="col btn btn-success claro btn-lg m-2">Borrar</button>
+        <button type="button" onclick="aPagar()" class="col btn btn-success claro btn-lg m-2">Resumen</button>
+      </div>
+      <br>
+    </form>
+  </section5>
+  <footer>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-footer">
+      <div class="container-fluid nav-justified justify-content-center">
+          <ul class="nav menuFooter">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Preguntas frecuentes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contactanos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Prensa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Conferencias</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Términos y condiciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Privacidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Estudiantes</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </footer>
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<script src="/TP-Integrador.js"></script>
+</body>
+</html>
